@@ -1,11 +1,6 @@
 import { Navbar, Nav, NavLink } from 'react-bootstrap';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import { MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
+import { Link } from "react-router-dom";
+import { MDBIcon } from 'mdb-react-ui-kit';
 import images from '../images';
 import styles from './NavigationBar.css';
 

@@ -5,30 +5,30 @@ function Services() {
     <div className="container-lg">
       <div className='row text-center'>
         <div className='col mt-3'>
-          <h1>Services</h1>
+          <h1>Tarifs</h1>
         </div>
       </div>
       <Table striped='columns' bordered hover>
         <thead>
           <tr className='text-center'>
             <th></th>
-            <th>Gestion Imax</th>
-            <th>Gestion Marché</th>
+            <th>Option 1</th>
+            <th>Option 2</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Gestion maintenance</th>
+            <th>petit</th>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <th>Gestion locative</th>
+            <th>Moyen</th>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <th>Tarifs</th>
+            <th>Grand</th>
             <td></td>
             <td></td>
           </tr>

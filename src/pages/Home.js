@@ -1,4 +1,4 @@
-import { Card, Button} from 'react-bootstrap';
+import { Carousel, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Quiz, BackgroundVideo } from '../components';
 import imgArr from '../images';
@@ -19,61 +19,45 @@ function Home() {
          </div>
        </div>
        <div className='d-flex justify-content-evenly flex-wrap'>
-         
-         <Card style={{ width: '12rem', border: 'none' }}>
-           <Card.Body>
-          <Card.Img src={imgArr['buildings1']}/>
-             <Card.Title>Compétence et expertise</Card.Title>
-             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-             <Card.Text>
-              Info
-             </Card.Text>
-           </Card.Body>
-         </Card>
+           <Carousel fade>
+             <Carousel.Item>
+               <img
+                 className="w-50"
+                 src={imgArr.buildings1}
+                 alt="First slide"
+               />
+               <Carousel.Caption>
+                 <h3>First slide label</h3>
+                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+             </Carousel.Item>
+             <Carousel.Item>
+               <img
+                 className="w-50"
+                 src={imgArr.buildings2}
+                 alt="Second slide"
+               />
 
-         <Card style={{ width: '12rem', border: 'none' }}>
-           <Card.Body>
-          <Card.Img src={imgArr['buildings2']}/>
-             <Card.Title>Accès au réseau de contact</Card.Title>
-             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-             <Card.Text>
-              Info
-             </Card.Text>
-           </Card.Body>
-         </Card>
+               <Carousel.Caption>
+                 <h3>Second slide label</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </Carousel.Caption>
+             </Carousel.Item>
+             <Carousel.Item>
+               <img
+                 className="w-50"
+                 src={imgArr.buildings3}
+                 alt="Third slide"
+               />
 
-         <Card style={{ width: '12rem', border: 'none' }}>
-           <Card.Body>
-          <Card.Img src={imgArr['buildings3']}/>
-             <Card.Title>Maximiser votre portefeuille immobilier</Card.Title>
-             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-             <Card.Text>
-               Info
-             </Card.Text>
-           </Card.Body>
-         </Card>
-
-         <Card style={{ width: '12rem', border: 'none' }}>
-          <Card.Img src={imgArr['buildings4']}/>
-           <Card.Body>
-             <Card.Title>Rencontre trimestrielles stratégiques</Card.Title>
-             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-             <Card.Text>
-               Info
-             </Card.Text>
-           </Card.Body>
-         </Card>
-
-         <Card style={{ width: '12rem', border: 'none' }}>
-           <Card.Body>
-          <Card.Img src={imgArr['buildings5']}/>
-             <Card.Title>Compétence et expertise</Card.Title>
-             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-             <Card.Text>
-              Info
-             </Card.Text>
-           </Card.Body>
-         </Card>
+               <Carousel.Caption>
+                 <h3>Third slide label</h3>
+                 <p>
+                   Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                 </p>
+               </Carousel.Caption>
+             </Carousel.Item>
+           </Carousel> 
        </div>
        <Link to='/contact'>
          <Button className='btn-primary btn-lg my-5'>
