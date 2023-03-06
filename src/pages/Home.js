@@ -1,23 +1,26 @@
 import { Card, Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Quiz } from '../components';
+import { Quiz, BackgroundVideo } from '../components';
 import imgArr from '../images';
 
 function Home() {
    return (
-     <div className="container-lg text-center">
+    <div>
+      <BackgroundVideo />
+     <div className="container-lg text-center overlay">
        <div className='row'>
-         <div className='col mt-3'>
+         <div className='col mt-3 text-white'>
            <h1>Acceuil</h1>
          </div>
        </div>
        <div className='row'>
          <div className='col'>
-           <h2 className='text-secondary mb-5'>Agence professionel de gestion pour immeubles à revenus</h2>
+           <h2 className='text-secondary mb-5 text-light'>Agence professionelle pour vidéographie d'immeubles</h2>
          </div>
        </div>
        <div className='d-flex justify-content-evenly flex-wrap'>
-         <Card className='bg-dark' style={{ width: '12rem', border: 'none' }}>
+         
+         <Card style={{ width: '12rem', border: 'none' }}>
            <Card.Body>
           <Card.Img src={imgArr['buildings1']}/>
              <Card.Title>Compétence et expertise</Card.Title>
@@ -79,6 +82,7 @@ function Home() {
        </Link>
        <Quiz isActive={true} count={2}/>
      </div>
+    </div>
    );
  }
  export default Home;

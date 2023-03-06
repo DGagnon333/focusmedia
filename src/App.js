@@ -1,4 +1,4 @@
-import { NavigationBar, BackgroundVideo } from './components';
+import { NavigationBar } from './components';
 import {
     BrowserRouter as Router,
     Routes,
@@ -9,8 +9,7 @@ import { Home, Contact, Services } from './pages';
 
 function App() {
   return (
-    <div className="App bg-black">
-      <BackgroundVideo className='opacity-50' />
+    <div className="App">
       <Router>
         <NavigationBar />
         <Routes>
