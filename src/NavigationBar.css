@@ -1,0 +1,9 @@
+:root{
+  --primary-color : rgb(68, 68, 68);
+}
+
+.NavigationBar {
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+}
